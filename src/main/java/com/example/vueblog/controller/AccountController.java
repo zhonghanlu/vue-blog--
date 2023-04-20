@@ -53,6 +53,6 @@ public class AccountController {
     @RequiresAuthentication
     public Result logout() {
         SecurityUtils.getSubject().logout();
-        return Result.succ(null);
+        return Result.succ("SUCCESS");
     }
 }
